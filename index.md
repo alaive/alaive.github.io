@@ -1,6 +1,6 @@
 ---
 layout: default
-logo: /fig/logo.png
+logo: /assets/img/logo.png
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
