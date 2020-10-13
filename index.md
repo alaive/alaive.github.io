@@ -1,6 +1,6 @@
 ---
 layout: default
-logo: [https://github.com/alaive/alaive.github.io/blob/main/logoplantar.png?raw=true]
+logo: https://github.com/alaive/alaive.github.io/blob/main/logoplantar.png?raw=true
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
