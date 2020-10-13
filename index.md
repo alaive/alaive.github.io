@@ -1,6 +1,6 @@
 ---
 layout: default
-logo: logoplantar.png
+logo: ./logoplantar.png
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
