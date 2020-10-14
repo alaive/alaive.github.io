@@ -6,7 +6,7 @@ layout: default
 
 
 
-# AGRICULTURE ![Agri](https://github.com/alaive/alaive.github.io/blob/main/assets/img/logoagri.png?raw=true)
+# AGRICULTURE ![Agri](https://github.com/alaive/alaive.github.io/blob/main/assets/img/logoagri.png?raw=true =100x)
 
 ## PLANTAR
 
