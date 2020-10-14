@@ -7,13 +7,11 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
 
-There should be whitespace between paragraphs.
+ALAIVE is an innovation project that brings together artificial intelligence and life science for the monitoring and optimal control of living systems with a special focus on agriculture and health care. It is implemented in a verstaile interactive platform that combines tools from natuaral language processing and Internet technology to allow for a natural human-machine interactions from any remote corner of the world.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+The system is currently being tested, firstly in a prototype for the permanent ambulatory monitoring of cardiovascular patients via wearables and secondly in a platform for the automatic control of plant growth using machine vision and robotics.
 
 # Agriculture
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 ## PLANTAR
 
@@ -23,7 +21,7 @@ PLANTAR is an Internet platform that efficiently monitors and controls the state
 
 ![Branching](https://github.com/alaive/alaive.github.io/blob/main/examplescreenplantar.png?raw=true)
 
-### Header 3
+## Related Publications
 
 ```js
 // Javascript code with syntax highlighting.
