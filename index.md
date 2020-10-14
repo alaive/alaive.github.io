@@ -8,114 +8,17 @@ layout: default
 
 # AGRICULTURE
 
-![Octocat](https://github.com/alaive/alaive.github.io/blob/main/logoplantar.png?raw=true)
+![Agri](https://github.com/alaive/alaive.github.io/blob/main/assets/img/logoagri.png?raw=true)
+
+## PLANTAR
 
 PLANTAR is an Internet platform that efficiently monitors and controls the state of plants and soil in horticultural and agricultural crops. The platform is able to simulate the evolution of individual plants for different fertigation and irrigation strategies and to choose those that would lead to a maximization of the crop yield with a low variance in the growth rate, minimizing the use of water and nutrient resources. With PLANTAR all the plants achieve the maximal growth at the same planned time, which permits to precisely plan harvesting in an efficient manner. This is achieved thanks to state of the art artificial intelligence techniques that automatically decide the treatment to apply to each plant according to the plant’s individual needs rather than establishing general irrigation and fertigation strategies common to all the plants, as done traditionally. This also leads to a drastic reduction in the resources needed for an optimal crop yield, making a more sustainable management of water and nutrients, maximizing sustainability while reducing costs.
 
-## Header 2
+# HEALTH CARE
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+![HC](https://github.com/alaive/alaive.github.io/blob/main/assets/img/logohc.png?raw=true)
 
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+## HRV2
+HRV2 is an Internet platform for the permanent monitoring of ambulatory cardiovascular patients. The monitoring is carried out from parameters derived from biometric signals, such as heart rate and level of activity, obtained from commercially available wearable devices (e.g. smartwatches). The sensor information is sent to an artificial intelligence server through an Android application for smartphones. The AI server combines advanced techniques for signal processing and artificial intelligence to transform the raw signals into medical parameters that characterize the health state of patients. These parameters are used to monitor, online, the patients’ health state as well as to estimate their acute cardiovascular risk, i.e. the risk to suffer a dangerous cardiovascular event in the next following hour (e.g. dangerous arrhythmias or sudden cardiac arrest). According to this risk estimation, an emergency protocol is triggered that coordinates actions that should be taken by the patient, by a responsible relative of the patient, and by the patient's clinician. The instruction of actions are sent to the smartphones of the patient, relative, and clinician through Android applications and SMS. The clinician has access to an interactive webpage that permits exploring the health history of the patient, the risk estimations, and the triggered emergency protocols. The webpage also provides tools for managing the set of patients under the supervision of the clinician. In [this link](http://134.76.19.30/PrototypeDemo_dev/index.php) you can find a direct access to the HRV2 platform. For further access and further details about the platform, please contact us.
 
 
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
