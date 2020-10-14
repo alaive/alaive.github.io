@@ -1,6 +1,6 @@
 ---
 layout: default
-logo: /assets/img/logo.png
+logo: droppedImage_2.png
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
