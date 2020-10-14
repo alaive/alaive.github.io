@@ -2,14 +2,15 @@
 layout: default
 ---
 
-ALAIVE is an innovation project that brings together artificial intelligence and life science for the monitoring and optimal control of living systems with a special focus on agriculture and health care. It is implemented in a verstaile interactive Internet platform that combines tools from natuaral language processing and emotion inference for a natural and emphatic human-machine interaction.
+[ALAIVE](https://www.snic.de/alaive/) is an innovation project that brings together artificial intelligence and life science for the monitoring and optimal control of living systems with a special focus on agriculture and health care. It is implemented in a verstaile interactive Internet platform that combines tools from natuaral language processing and emotion inference for a natural and emphatic human-machine interaction.
 
-[Link to another page](https://www.snic.de/alaive/).
 
 
 # AGRICULTURE
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+![Octocat](https://github.com/alaive/alaive.github.io/blob/main/logoplantar.png?raw=true)
+
+PLANTAR is an Internet platform that efficiently monitors and controls the state of plants and soil in horticultural and agricultural crops. The platform is able to simulate the evolution of individual plants for different fertigation and irrigation strategies and to choose those that would lead to a maximization of the crop yield with a low variance in the growth rate, minimizing the use of water and nutrient resources. With PLANTAR all the plants achieve the maximal growth at the same planned time, which permits to precisely plan harvesting in an efficient manner. This is achieved thanks to state of the art artificial intelligence techniques that automatically decide the treatment to apply to each plant according to the plant’s individual needs rather than establishing general irrigation and fertigation strategies common to all the plants, as done traditionally. This also leads to a drastic reduction in the resources needed for an optimal crop yield, making a more sustainable management of water and nutrients, maximizing sustainability while reducing costs.
 
 ## Header 2
 
