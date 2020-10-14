@@ -1,6 +1,6 @@
 ---
 layout: default
-logo: droppedImage_2.png
+logo: https://github.com/alaive/alaive.github.io/blob/main/droppedImage_2.png?raw=true
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
