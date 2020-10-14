@@ -4,7 +4,7 @@ layout: default
 
 ALAIVE is an innovation project that brings together artificial intelligence and life science for the monitoring and optimal control of living systems with a special focus on agriculture and health care. It is implemented in a verstaile interactive Internet platform that combines tools from natuaral language processing and emotion inference for a natural and emphatic human-machine interaction.
 
-[Link to another page](./snic.de/alaive).
+[Link to another page](https://www.snic.de/alaive/).
 
 
 # AGRICULTURE
