@@ -8,6 +8,8 @@ layout: default
 
 # AGRICULTURE ![Agri](https://github.com/alaive/alaive.github.io/blob/main/assets/img/logoagri.png?raw=true =100x)
 
+<img src="/assets/img/logoagri.png" alt="drawing" width="200"/>
+
 ## PLANTAR
 
 PLANTAR is an Internet platform that efficiently monitors and controls the state of plants and soil in horticultural and agricultural crops. The platform is able to simulate the evolution of individual plants for different fertigation and irrigation strategies and to choose those that would lead to a maximization of the crop yield with a low variance in the growth rate, minimizing the use of water and nutrient resources. With PLANTAR all the plants achieve the maximal growth at the same planned time, which permits to precisely plan harvesting in an efficient manner. This is achieved thanks to state of the art artificial intelligence techniques that automatically decide the treatment to apply to each plant according to the plant’s individual needs rather than establishing general irrigation and fertigation strategies common to all the plants, as done traditionally. This also leads to a drastic reduction in the resources needed for an optimal crop yield, making a more sustainable management of water and nutrients, maximizing sustainability while reducing costs.
