@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[ALAIVE](https://www.snic.de/alaive/) is an innovation project that brings together artificial intelligence and life science for the monitoring and optimal control of living systems with a special focus on agriculture and health care. It is implemented in a verstaile interactive Internet platform that combines tools from natuaral language processing and emotion inference for a natural and emphatic human-machine interaction.
+[ALAIVE](https://www.snic.de/alaive/) is a start-up that brings together computational neuroscience, artificial intelligence, and life science for the monitoring and optimal control of living systems with a special focus on agriculture and health care. The intelligent systems are implemented in a verstaile interactive Internet platform that uses tools for natuaral language processing and intention inference for a natural and emphatic human-machine interaction.
 
 
 
