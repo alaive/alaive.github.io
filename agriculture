@@ -1,2 +1,12 @@
-url : http://alaive.github.io 
-baseurl: /agriculture
+# url : http://alaive.github.io 
+# baseurl: /agriculture
+
+<html>
+  <body>
+  <h1>agriculture</h1>
+    <style>
+      body {blackground-color:blue;
+        color:#FFF};
+    </style>  
+  </body>
+</html>  
