@@ -2,8 +2,8 @@
 layout: default
 ---
 
-[ALAIVE](https://www.snic.de/alaive/) is an interactive Internet platform that combines tools from computational neuroscience, artificial intelligence, and signal processing for optimization, monitoring, and decision-making. Our main applications are yield optimization in agriculture, cardiovascular care using wearables, and emphatic human-machine interactions for mental well-being, art, and culture.
-[comment]: <> (brings together computational neuroscience, artificial intelligence, and signal processing for optimization, monitoring, and decision-making for the monitoring and optimal control of living systems with a special focus on agriculture and health care. The intelligent systems are implemented in a verstaile interactive Internet platform that uses tools of natuaral language processing and intention inference for a natural and emphatic human-machine interaction.)
+[ALAIVE](https://www.snic.de/alaive/) brings together tools from computational neuroscience, artificial intelligence, and signal processing into a versatile interactive cognitive platform. The platform combines algorithms for reasoning and machine learning to solve optimization and decision-making problems using sensory data (see our prototypes for precision agriculture and health care). These algorithms are connected to a high complexity neural network that emulates human emotions and basic neurological responses in the brain taking place during a human-like conversation. The neural network is used to provide our platform with different personalities depending on the application that permits establishing an emphatic human-machine interaction using natural language oriented to achieve the specific goal of the user. The access to our interactive cognitive platform is easy and straightforward through graphical web interfaces. Its applications range from precision agriculture and health care to mental well-being, art, and culture.
+
 
 # AGRICULTURE <img src="/assets/img/logoagri.png" alt="drawing" width="20"/>
 
