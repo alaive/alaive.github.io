@@ -2,9 +2,8 @@
 layout: default
 ---
 
-[ALAIVE](https://www.snic.de/alaive/) is a start-up that brings together computational neuroscience, artificial intelligence, and life science for the monitoring and optimal control of living systems with a special focus on agriculture and health care. The intelligent systems are implemented in a verstaile interactive Internet platform that uses tools of natuaral language processing and intention inference for a natural and emphatic human-machine interaction.
-
-
+[ALAIVE](https://www.snic.de/alaive/) is an interactive Internet platform that combines tools from computational neuroscience, artificial intelligence, and signal processing for optimization, monitoring, and decision-making. Our main applications are yield optimization in agriculture, cardiovascular care using wearables, and emphatic human-machine interactions for mental well-being, art, and culture.
+[comment]: <> (brings together computational neuroscience, artificial intelligence, and signal processing for optimization, monitoring, and decision-making for the monitoring and optimal control of living systems with a special focus on agriculture and health care. The intelligent systems are implemented in a verstaile interactive Internet platform that uses tools of natuaral language processing and intention inference for a natural and emphatic human-machine interaction.)
 
 # AGRICULTURE <img src="/assets/img/logoagri.png" alt="drawing" width="20"/>
 
