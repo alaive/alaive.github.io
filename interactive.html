@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Generator" content="iWeb 3.0.4" />
+    <meta name="iWeb-Build" content="local-build-20181213" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=1500" />
+    <title>Interactive</title>
+    
+    <style>
+    
+    #MSG {
+        position: fixed;
+        top: 100px;
+        left: 100px;
+        width: 500px;
+        height: 300px;
+        border-radius: 0px;
+        background: white ;/*#ffffff;*/
+    }
+
+    </style>
+    
+  </head>
+  
+  
+  <body style="background: rgb(0, 0, 0); margin: 0pt; ">
+      
+      
+      <!-- TO CENTER WEB --->
+      <div style="text-align: center; ">
+        <div style="margin-bottom: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; overflow: hidden; position: relative; word-wrap: break-word;  background: black; text-align: left; width: 700px; " id="body_content">
+         <div style="height: 8000px; margin-left: 0px; position: relative; width: 800px; " id="header_layer">
+             
+             
+             
+             
+             <div id="MSG" style="position:absolute;">
+                 
+                 <span style="position:relative; font-family: arial;left:10px;font-size:30px; text-align: center; cursor: pointer;line-height: 40pt; color:black"> To run the interactive interface <span style="color:red";> CHROME </span> browser is required.</span></br></br></br></br>
+                 
+                 <span style="position:relative; font-family: arial;left:10px;font-size:30px; text-align: center; cursor: pointer;line-height: 40pt; color:black"> Click <span style="color:blue"; onclick="openURL()"> HERE </span> is your browser is CHROME.</span>
+                 
+             </div>
+             
+             <!-- Check availability of scenarios -->
+             <script type='text/javascript'>
+                 
+             function openURL() {
+               
+               var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+               if ( isChrome != 1 ) {
+                 // IE
+                 alert("The browser is not Chrome!!");
+               } else {
+                 // other browsers
+                 window.open('http://vm19030.virt.gwdg.de/alaiveinteractive/');
+               }
+               
+             }
+             
+                
+
+             </script>
+             
+             
+      
+      <!-- TO CENTER WEB -->
+         </div>
+    </div>
+    </div>
+  </body>
+</html>
+
+
