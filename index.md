@@ -12,6 +12,10 @@ layout: default
 
 # HEALTH CARE  <img src="/assets/img/logohc.png" alt="drawing" width="40"/>
 
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![<img src="/assets/img/logohc.png" alt="drawing" width="40"/>](http://vm19030.virt.gwdg.de/alaive/alaive/Health_Care.html)  |  ![<img src="/assets/img/logohc.png" alt="drawing" width="40"/>](http://vm19030.virt.gwdg.de/alaive/alaive/Health_Care.html)
+
 ## HRV2
 [HRV2](http://vm19030.virt.gwdg.de/alaive/alaive/Health_Care.html) is an Internet platform for the permanent monitoring of ambulatory cardiovascular patients. The monitoring is carried out from parameters derived from biometric signals, such as heart rate and level of activity, obtained from commercially available wearable devices (e.g. smartwatches). The sensor information is sent to an artificial intelligence server through an Android application for smartphones. The AI server combines advanced techniques for signal processing and artificial intelligence to transform the raw signals into medical parameters that characterize the health state of patients. These parameters are used to monitor, online, the patients’ health state as well as to estimate their acute cardiovascular risk, i.e. the risk to suffer a dangerous cardiovascular event in the next following hour (e.g. dangerous arrhythmias or sudden cardiac arrest). According to this risk estimation, an emergency protocol is triggered that coordinates actions that should be taken by the patient, by a responsible relative of the patient, and by the patient's clinician. The instruction of actions are sent to the smartphones of the patient, relative, and clinician through Android applications and SMS. The clinician has access to an interactive webpage that permits exploring the health history of the patient, the risk estimations, and the triggered emergency protocols. The webpage also provides tools for managing the set of patients under the supervision of the clinician. For further access and further details about the platform, please contact us.
 
