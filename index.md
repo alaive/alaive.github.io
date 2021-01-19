@@ -13,7 +13,7 @@ layout: default
 # HEALTH CARE  <img src="/assets/img/logohc.png" alt="drawing" width="40"/>
 
 Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
+-|-
 ![<img src="/assets/img/logohc.png" alt="drawing" width="40"/>](http://vm19030.virt.gwdg.de/alaive/alaive/Health_Care.html)  |  ![<img src="/assets/img/logohc.png" alt="drawing" width="40"/>](http://vm19030.virt.gwdg.de/alaive/alaive/Health_Care.html)
 
 ## HRV2
