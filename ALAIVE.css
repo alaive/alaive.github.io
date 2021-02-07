@@ -24,6 +24,7 @@
 }
 
 .u-section-2 .u-text-2 {
+  line-height: 25.6px;
   margin: 16px -18px 0 0;
 }
 
@@ -66,7 +67,6 @@
   }
 
   .u-section-2 .u-text-2 {
-    line-height: 25.6px;
     margin-top: 119px;
     margin-right: 0;
   }
