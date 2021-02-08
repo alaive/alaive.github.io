@@ -159,7 +159,6 @@
   grid-gap: 10px 10px;
   margin-top: 60px;
   margin-bottom: 60px;
-  height: auto;
 }
 
 .u-section-3 .u-container-layout-1 {
@@ -220,6 +219,7 @@
   .u-section-3 .u-list-1 {
     min-height: 259px;
     grid-template-columns: repeat(3, calc(33.333333333333336% - 6.66667px));
+    height: auto;
   }
 
   .u-section-3 .u-text-1 {
