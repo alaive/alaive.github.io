@@ -363,15 +363,15 @@
   padding: 30px;
 }
 
-.u-section-5 .u-icon-1 {
-  height: 114px;
-  width: 149px;
-  margin: 56px auto 0;
+.u-section-5 .u-image-2 {
+  width: 144px;
+  height: 110px;
+  margin: 20px auto 0;
 }
 
 .u-section-5 .u-text-1 {
   font-size: 3rem;
-  margin: 39px 0 0;
+  margin: 20px 0 0;
 }
 
 .u-section-5 .u-text-2 {
@@ -385,7 +385,7 @@
   margin: 20px auto 0;
 }
 
-.u-section-5 .u-image-2 {
+.u-section-5 .u-image-3 {
   min-height: 656px;
   background-image: url("images/alaive_screen_interactive1.jpg");
   background-position: 0% 46.95%;
@@ -414,15 +414,11 @@
     min-height: 541px;
   }
 
-  .u-section-5 .u-icon-1 {
-    height: 147px;
-  }
-
   .u-section-5 .u-link-1 {
     padding-bottom: 2px;
   }
 
-  .u-section-5 .u-image-2 {
+  .u-section-5 .u-image-3 {
     min-height: 541px;
   }
 }
@@ -440,16 +436,16 @@
     min-height: 100px;
   }
 
-  .u-section-5 .u-icon-1 {
-    height: 130px;
+  .u-section-5 .u-image-2 {
     width: 132px;
+    height: 101px;
   }
 
   .u-section-5 .u-text-1 {
     font-size: 1.875rem;
   }
 
-  .u-section-5 .u-image-2 {
+  .u-section-5 .u-image-3 {
     min-height: 414px;
   }
 }
@@ -473,7 +469,7 @@
     padding-right: 10px;
   }
 
-  .u-section-5 .u-image-2 {
+  .u-section-5 .u-image-3 {
     min-height: 1331px;
   }
 
@@ -488,7 +484,7 @@
     min-height: 391px;
   }
 
-  .u-section-5 .u-image-2 {
+  .u-section-5 .u-image-3 {
     min-height: 838px;
   }
 }.u-section-6 .u-sheet-1 {
