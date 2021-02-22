@@ -493,14 +493,8 @@
 
 .u-section-6 .u-video-1 {
   height: 500px;
-  margin: 50px 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-6 .u-video-1 {
-    margin-right: initial;
-    margin-left: initial;
-  }
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 991px) {
@@ -510,8 +504,6 @@
 
   .u-section-6 .u-video-1 {
     height: 404px;
-    margin-right: initial;
-    margin-left: initial;
   }
 }
 
@@ -522,8 +514,6 @@
 
   .u-section-6 .u-video-1 {
     height: 310px;
-    margin-right: initial;
-    margin-left: initial;
   }
 }
 
@@ -534,8 +524,6 @@
 
   .u-section-6 .u-video-1 {
     height: 200px;
-    margin-right: initial;
-    margin-left: initial;
   }
 }.u-section-7 .u-sheet-1 {
   min-height: 800px;
@@ -1615,4 +1603,7 @@
     margin-left: initial;
     width: auto;
   }
+}a.pswp__share--download
+{
+display: none;
 }
