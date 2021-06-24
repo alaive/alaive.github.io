@@ -153,12 +153,16 @@
 }
 
 .u-section-3 .u-list-1 {
-  min-height: 315px;
-  grid-template-columns: calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px);
   grid-template-rows: auto;
-  grid-gap: 10px 10px;
   margin-top: 60px;
   margin-bottom: 60px;
+  grid-auto-rows: 100%;
+}
+
+.u-section-3 .u-repeater-1 {
+  grid-template-columns: calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px);
+  grid-gap: 10px 10px;
+  min-height: 315px;
 }
 
 .u-section-3 .u-container-layout-1 {
@@ -217,8 +221,6 @@
 
 @media (max-width: 1199px) {
   .u-section-3 .u-list-1 {
-    min-height: 259px;
-    grid-template-columns: repeat(3, calc(33.333333333333336% - 6.66667px));
     height: auto;
   }
 
@@ -251,9 +253,8 @@
 }
 
 @media (max-width: 991px) {
-  .u-section-3 .u-list-1 {
-    min-height: 595px;
-    grid-template-columns: repeat(2, calc(50% - 5.0000025px));
+  .u-section-3 .u-repeater-1 {
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
   }
 
   .u-section-3 .u-text-2 {
@@ -270,10 +271,6 @@
 }
 
 @media (max-width: 767px) {
-  .u-section-3 .u-list-1 {
-    grid-template-columns: repeat(2, calc(50% - 5px));
-  }
-
   .u-section-3 .u-container-layout-1 {
     padding-left: 10px;
     padding-right: 10px;
@@ -291,7 +288,7 @@
 }
 
 @media (max-width: 575px) {
-  .u-section-3 .u-list-1 {
+  .u-section-3 .u-repeater-1 {
     grid-template-columns: 100%;
   }
 }.u-section-4 .u-sheet-1 {
@@ -301,7 +298,7 @@
 .u-section-4 .u-image-1 {
   width: 400px;
   height: 400px;
-  background-image: url("images/logo_interactive1.jpg");
+  background-image: url("images/logo_interactive1.jpg?rand=129c");
   background-position: 50% 50%;
   margin: 118px auto 0;
 }
@@ -532,7 +529,7 @@
 .u-section-7 .u-image-1 {
   width: 400px;
   height: 400px;
-  background-image: url("images/logo_agriculture3.jpg");
+  background-image: url("images/logo_agriculture3.jpg?rand=5472");
   background-position: 50% 50%;
   margin: 118px auto 0;
 }
@@ -763,7 +760,7 @@
 .u-section-10 .u-image-1 {
   width: 400px;
   height: 400px;
-  background-image: url("images/logo_healthcare1.jpg");
+  background-image: url("images/logo_healthcare1.jpg?rand=c911");
   background-position: 50% 50%;
   margin: 118px auto 0;
 }
@@ -1188,11 +1185,6 @@
   margin: 30px auto 0;
 }
 
-.u-section-14 .u-text-2 {
-  width: 696px;
-  margin: 21px auto 0;
-}
-
 .u-section-14 .u-layout-wrap-1 {
   margin: 30px 0 60px auto;
 }
@@ -1220,7 +1212,7 @@
   padding: 30px;
 }
 
-.u-section-14 .u-text-3 {
+.u-section-14 .u-text-2 {
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: 2px;
@@ -1228,7 +1220,7 @@
   margin: 0 -1px;
 }
 
-.u-section-14 .u-text-4 {
+.u-section-14 .u-text-3 {
   margin: 20px -1px 0;
 }
 
@@ -1271,7 +1263,7 @@
   margin: 22px auto 0;
 }
 
-.u-section-14 .u-text-5 {
+.u-section-14 .u-text-4 {
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: 2px;
@@ -1279,7 +1271,7 @@
   margin: 30px -1px 0;
 }
 
-.u-section-14 .u-text-6 {
+.u-section-14 .u-text-5 {
   margin: 20px -1px 0;
 }
 
@@ -1297,7 +1289,7 @@
   margin: 12px auto 0;
 }
 
-.u-section-14 .u-text-7 {
+.u-section-14 .u-text-6 {
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: 2px;
@@ -1328,7 +1320,7 @@
   margin: 0 auto;
 }
 
-.u-section-14 .u-text-8 {
+.u-section-14 .u-text-7 {
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: 2px;
@@ -1336,7 +1328,7 @@
   margin: 30px -1px 0;
 }
 
-.u-section-14 .u-text-9 {
+.u-section-14 .u-text-8 {
   margin: 20px -1px 0;
 }
 
@@ -1359,12 +1351,12 @@
     min-height: 261px;
   }
 
-  .u-section-14 .u-text-3 {
+  .u-section-14 .u-text-2 {
     margin-left: 0;
     margin-right: 0;
   }
 
-  .u-section-14 .u-text-4 {
+  .u-section-14 .u-text-3 {
     margin-left: 0;
     margin-right: 0;
   }
@@ -1373,12 +1365,12 @@
     min-height: 261px;
   }
 
-  .u-section-14 .u-text-5 {
+  .u-section-14 .u-text-4 {
     margin-left: 0;
     margin-right: 0;
   }
 
-  .u-section-14 .u-text-6 {
+  .u-section-14 .u-text-5 {
     margin-left: 0;
     margin-right: 0;
   }
@@ -1387,7 +1379,7 @@
     min-height: 241px;
   }
 
-  .u-section-14 .u-text-7 {
+  .u-section-14 .u-text-6 {
     margin-left: 0;
     margin-right: 0;
   }
@@ -1396,12 +1388,12 @@
     min-height: 241px;
   }
 
-  .u-section-14 .u-text-8 {
+  .u-section-14 .u-text-7 {
     margin-left: 0;
     margin-right: 0;
   }
 
-  .u-section-14 .u-text-9 {
+  .u-section-14 .u-text-8 {
     margin-left: 0;
     margin-right: 0;
   }
@@ -1446,10 +1438,6 @@
     width: 540px;
   }
 
-  .u-section-14 .u-text-2 {
-    width: 540px;
-  }
-
   .u-section-14 .u-layout-cell-1 {
     min-height: 577px;
   }
@@ -1461,10 +1449,6 @@
   }
 
   .u-section-14 .u-text-1 {
-    width: 340px;
-  }
-
-  .u-section-14 .u-text-2 {
     width: 340px;
   }
 
@@ -1486,12 +1470,16 @@
 }
 
 .u-section-15 .u-list-1 {
-  min-height: 157px;
-  grid-template-columns: calc(33.3333% - 7px) calc(33.3333% - 7px) calc(33.3333% - 7px);
   grid-template-rows: auto;
   width: 1140px;
-  grid-gap: 10px 10px;
+  grid-auto-rows: 100%;
   margin: 90px 0 60px;
+}
+
+.u-section-15 .u-repeater-1 {
+  grid-template-columns: calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px);
+  grid-gap: 10px 10px;
+  min-height: 157px;
 }
 
 .u-section-15 .u-container-layout-1 {
@@ -1530,8 +1518,6 @@
   }
 
   .u-section-15 .u-list-1 {
-    min-height: 129px;
-    grid-template-columns: repeat(3, calc(33.333333333333336% - 7px));
     width: 940px;
     height: auto;
   }
@@ -1539,9 +1525,11 @@
 
 @media (max-width: 991px) {
   .u-section-15 .u-list-1 {
-    min-height: 296px;
-    grid-template-columns: repeat(2, calc(((100% - 720px) / 2)  + 355px));
     width: 720px;
+  }
+
+  .u-section-15 .u-repeater-1 {
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
   }
 }
 
@@ -1551,7 +1539,6 @@
   }
 
   .u-section-15 .u-list-1 {
-    grid-template-columns: repeat(2, calc(((100% - 540px) / 2)  + 265px));
     width: 540px;
   }
 
@@ -1579,8 +1566,6 @@
   }
 
   .u-section-15 .u-list-1 {
-    min-height: 288px;
-    grid-template-columns: calc(((100% - 340px) / 2) + 165px) calc(((100% - 340px) / 2) + 165px);
     margin-right: initial;
     margin-left: initial;
     width: auto;
