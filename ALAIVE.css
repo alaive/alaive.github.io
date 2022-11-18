@@ -333,7 +333,7 @@
   .u-section-4 .u-text-1 {
     width: 340px;
   }
-}.u-section-5 {
+} .u-section-5 {
   min-height: 656px;
 }
 
@@ -385,7 +385,7 @@
 .u-section-5 .u-image-3 {
   min-height: 656px;
   background-image: url("images/alaive_screen_interactive1.jpg");
-  background-position: 0% 46.95%;
+  background-position: 50% 50%;
   background-size: auto 125%;
 }
 
@@ -394,7 +394,7 @@
 }
 
 @media (max-width: 1199px) {
-  .u-section-5 {
+   .u-section-5 {
     min-height: 541px;
   }
 
@@ -421,7 +421,7 @@
 }
 
 @media (max-width: 991px) {
-  .u-section-5 {
+   .u-section-5 {
     min-height: 414px;
   }
 
@@ -448,7 +448,7 @@
 }
 
 @media (max-width: 767px) {
-  .u-section-5 {
+   .u-section-5 {
     min-height: 100px;
   }
 
@@ -560,7 +560,7 @@
   .u-section-7 .u-text-1 {
     width: 340px;
   }
-}.u-section-8 {
+} .u-section-8 {
   min-height: 656px;
 }
 
@@ -612,7 +612,7 @@
 .u-section-8 .u-image-2 {
   min-height: 656px;
   background-image: url("images/Agriculture_example_interface1.png");
-  background-position: 49.46% 89.33%;
+  background-position: 50% 50%;
   background-size: auto 125%;
 }
 
@@ -621,7 +621,7 @@
 }
 
 @media (max-width: 1199px) {
-  .u-section-8 {
+   .u-section-8 {
     min-height: 541px;
   }
 
@@ -652,7 +652,7 @@
 }
 
 @media (max-width: 991px) {
-  .u-section-8 {
+   .u-section-8 {
     min-height: 414px;
   }
 
@@ -679,7 +679,7 @@
 }
 
 @media (max-width: 767px) {
-  .u-section-8 {
+   .u-section-8 {
     min-height: 100px;
   }
 
@@ -760,7 +760,7 @@
 .u-section-10 .u-image-1 {
   width: 400px;
   height: 400px;
-  background-image: url("images/logo_healthcare1.jpg");
+  background-image: url("images/logo_healthcare1.jpg?rand=c911");
   background-position: 50% 50%;
   margin: 118px auto 0;
 }
@@ -791,7 +791,7 @@
   .u-section-10 .u-text-1 {
     width: 340px;
   }
-}.u-section-11 {
+} .u-section-11 {
   min-height: 656px;
 }
 
@@ -843,7 +843,7 @@
 .u-section-11 .u-image-2 {
   min-height: 656px;
   background-image: url("images/example_screen_doctor.jpg");
-  background-position: 31.26% 100%;
+  background-position: 50% 50%;
   background-size: auto 125%;
 }
 
@@ -852,7 +852,7 @@
 }
 
 @media (max-width: 1199px) {
-  .u-section-11 {
+   .u-section-11 {
     min-height: 541px;
   }
 
@@ -883,7 +883,7 @@
 }
 
 @media (max-width: 991px) {
-  .u-section-11 {
+   .u-section-11 {
     min-height: 414px;
   }
 
@@ -910,7 +910,7 @@
 }
 
 @media (max-width: 767px) {
-  .u-section-11 {
+   .u-section-11 {
     min-height: 100px;
   }
 
@@ -984,7 +984,7 @@
   .u-section-12 .u-video-1 {
     height: 200px;
   }
-}.u-section-13 {
+} .u-section-13 {
   min-height: 689px;
 }
 
@@ -1043,7 +1043,7 @@
 }
 
 @media (max-width: 1199px) {
-  .u-section-13 {
+   .u-section-13 {
     min-height: 566px;
   }
 
@@ -1075,7 +1075,7 @@
 }
 
 @media (max-width: 991px) {
-  .u-section-13 {
+   .u-section-13 {
     min-height: 432px;
   }
 
@@ -1117,7 +1117,7 @@
 }
 
 @media (max-width: 767px) {
-  .u-section-13 {
+   .u-section-13 {
     min-height: 854px;
   }
 
@@ -1155,7 +1155,7 @@
 }
 
 @media (max-width: 575px) {
-  .u-section-13 {
+   .u-section-13 {
     min-height: 608px;
   }
 
@@ -1471,7 +1471,6 @@
 
 .u-section-15 .u-list-1 {
   grid-template-rows: auto;
-  width: 1140px;
   grid-auto-rows: 100%;
   margin: 90px 0 60px;
 }
@@ -1518,16 +1517,13 @@
   }
 
   .u-section-15 .u-list-1 {
-    width: 940px;
     height: auto;
+    margin-right: initial;
+    margin-left: initial;
   }
 }
 
 @media (max-width: 991px) {
-  .u-section-15 .u-list-1 {
-    width: 720px;
-  }
-
   .u-section-15 .u-repeater-1 {
     grid-template-columns: calc(50% - 5px) calc(50% - 5px);
   }
@@ -1535,10 +1531,6 @@
 
 @media (max-width: 767px) {
   .u-section-15 .u-text-1 {
-    width: 540px;
-  }
-
-  .u-section-15 .u-list-1 {
     width: 540px;
   }
 
@@ -1563,12 +1555,6 @@
     width: 340px;
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .u-section-15 .u-list-1 {
-    margin-right: initial;
-    margin-left: initial;
-    width: auto;
   }
 
   .u-section-15 .u-image-1 {
