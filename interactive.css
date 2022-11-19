@@ -1,4 +1,4 @@
-.u-section-1 {
+ .u-section-1 {
   background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/7d55bc5f2fd8a5988450a5423facc203ac4c17b32f4e6a73da5f6b6f7909a94a236e744dcf2c45f504594dde2dcb60292d812fb8ae5acdd611c615_12801.jpg");
   background-position: 50% 50%;
 }
@@ -38,7 +38,7 @@
   .u-section-1 .u-sheet-1 {
     min-height: 287px;
   }
-}.u-section-2 {
+} .u-section-2 {
   background-image: none;
 }
 
@@ -102,7 +102,7 @@
   .u-section-2 .u-text-2 {
     width: 340px;
   }
-}.u-section-3 {
+} .u-section-3 {
   background-image: none;
 }
 
@@ -644,7 +644,7 @@
     margin-right: initial;
     margin-left: initial;
   }
-}.u-section-5 {
+} .u-section-5 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -822,7 +822,7 @@
   .u-section-5 .u-text-1 {
     margin-right: 0;
   }
-}.u-section-6 {
+} .u-section-6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -997,7 +997,7 @@
   .u-section-6 .u-text-1 {
     margin-right: 0;
   }
-}.u-section-7 {
+} .u-section-7 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1018,7 +1018,7 @@
 }
 
 .u-section-7 .u-image-1 {
-  background-image: url("images/img_door_watch.jpg");
+  background-image: url("images/38b420ae52775494fa081eef1cd62bf4487ddc2b8668cee9f762c1e99d59813f0b6898d2afe4e8054d23c98316f22cc918dca2286b8bb799b23bb9_1280.jpg");
   background-position: 50% 50%;
 }
 
@@ -1027,7 +1027,7 @@
 }
 
 .u-section-7 .u-image-2 {
-  background-image: url("images/img_red_hat.jpg");
+  background-image: url("images/25d84f72269e76da964a1f4fb9326b94a53a15cc8ef37abd532583876ebc304928e25eaf71f1388cbfd355e9c20d62ac12470b7a68805fc8bcc850_1280.jpg");
   background-position: 50% 50%;
 }
 
@@ -1172,7 +1172,7 @@
   .u-section-7 .u-text-1 {
     margin-right: 0;
   }
-}.u-section-8 {
+} .u-section-8 {
   margin-top: 0;
   margin-bottom: 0;
 }
