@@ -384,9 +384,8 @@
 
 .u-section-5 .u-image-3 {
   min-height: 656px;
-  background-image: url("images/alaive_screen_interactive1.jpg");
+  background-image: url("images/062d63f8adddb431c9d819663023533940acb37ebf95ee69a4281e450ba9d8db57be3ffcf7f26a7e09d8bab9ecdf461cf6cc695a812ffec68d4adb_1280.jpg");
   background-position: 50% 50%;
-  background-size: auto 125%;
 }
 
 .u-section-5 .u-container-layout-3 {
@@ -417,6 +416,7 @@
 
   .u-section-5 .u-image-3 {
     min-height: 541px;
+    background-size: auto 125%;
   }
 }
 
