@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALAIVE | Animals Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600&family=Inter:wght@200;300;400;600&family=Montserrat:wght@200;300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plants-theme.css">
+</head>
+
+<body>
+
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <div class="lang-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+            </svg>
+            <span>EN</span>
+        </div>
+        <div class="lang-dropdown">
+            <a href="animals.html" class="active">English</a>
+            <a href="animals_de.html">Deutsch</a>
+            <a href="animals_es.html">Español</a>
+        </div>
+    </div>
+
+
+    <!-- Hero Background (Placeholder or Static Image) -->
+    <!-- Hero Background (Video) -->
+    <div class="video-background-fixed">
+        <video autoplay muted loop playsinline class="bg-video active" style="opacity: 1;">
+            <source src="assets/animals_movie.mp4" type="video/mp4">
+        </video>
+        <!-- Overlay -->
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.1);"></div>
+    </div>
+
+    <a href="index.html" class="back-nav">&larr; Main Dashboard</a>
+
+    <!-- Split Screen Layout for Hero -->
+    <div class="split-container" style="min-height: 80vh;">
+
+        <!-- Left: Intro Panel -->
+        <main class="split-left" style="background: rgba(255, 255, 255, 0.9);">
+            <div class="fade-in">
+                <h2>Livestock Monitoring</h2>
+                <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: #ce0000;">AI-Powered Solution</h3>
+                <p>
+                    AI-powered livestock platform delivering <strong>behavioral and health intelligence</strong>,
+                    combined with
+                    individual animal tracking and predictive insights to maximize welfare, productivity, and
+                    profitability.
+                </p>
+
+                <div style="margin-top: 3rem;">
+                    <a href="#features" class="action-btn">View Solutions &darr;</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right: Visual Focus -->
+        <div class="split-right">
+            <!-- Image removed as per user request -->
+        </div>
+
+    </div>
+
+    <!-- Scrollable Content Section -->
+    <section id="features" class="content-section">
+
+        <!-- Feature Row 1: Behavioral Monitoring -->
+        <div class="feature-row">
+            <div class="feature-text">
+                <h3>Intelligent Behavioral Monitoring<br>with Computer Vision</h3>
+                <p>
+                    Our AI-driven computer vision platform continuously analyzes livestock behavior to detect early
+                    signs of health issues that are invisible to the human eye. By modeling <strong
+                        style="color: #ce0000;">joint movements, gait patterns, posture</strong>, and each animal’s
+                    interaction with the herd, the system establishes a precise baseline of normal behavior.
+                </p>
+                <br>
+                <p>
+                    When deviations occur—such as abnormal movement, reduced mobility, or social withdrawal—the system
+                    automatically flags the animal as potentially at risk. This enables farmers and veterinarians to
+                    identify problems days or even weeks earlier than traditional observation methods, reducing manual
+                    inspections, improving <strong style="color: #ce0000;">animal welfare</strong>, and significantly
+                    lowering economic losses due to late diagnosis.
+                </p>
+            </div>
+            <div class="feature-image-container">
+                <!-- Behavioral Vision Image -->
+                <img src="assets/animal_behavioral_vision.png" alt="Behavioral Monitoring">
+            </div>
+        </div>
+
+        <!-- Feature Row 2: Health Monitoring (Reverse) -->
+        <div class="feature-row reverse">
+            <div class="feature-text">
+                <h3>Real-Time Health Monitoring<br>with Smart Sensors</h3>
+                <p>
+                    Complementing visual intelligence, our solution integrates real-time physiological monitoring using
+                    smart sensors attached to each animal. Key health indicators—including <strong
+                        style="color: #ce0000;">body temperature, heart rate, weight, and activity levels</strong>—are
+                    continuously tracked and analyzed using advanced AI models.
+                </p>
+                <br>
+                <p>
+                    By detecting subtle physiological changes, the system provides early warnings of disease, stress, or
+                    metabolic imbalance before symptoms become critical. Combined with automated alerts and individual
+                    animal health profiles, this approach enables <strong style="color: #ce0000;">proactive
+                        interventions</strong>, optimized treatment decisions, and data-driven herd management,
+                    ultimately improving productivity and reducing veterinary costs.
+                </p>
+            </div>
+            <div class="feature-image-container">
+                <!-- Health Sensors Image -->
+                <img src="assets/animal_health_sensors.png" alt="Health Sensors">
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="impressum.html">Impressum</a>
+            <a href="Private.html">Privacy Policy</a>
+            <a href="License.html">License</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <span class="copyright">&copy; 2026 ALAIVE &bull; ANIMAL INTELLIGENCE</span>
+    </footer>
+</body>
+
+</html>

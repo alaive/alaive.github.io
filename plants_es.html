@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALAIVE | Flora Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600&family=Inter:wght@200;300;400;600&family=Montserrat:wght@200;300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plants-theme.css">
+</head>
+
+<body>
+
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <div class="lang-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+            </svg>
+            <span>ES</span>
+        </div>
+        <div class="lang-dropdown">
+            <a href="plants.html">English</a>
+            <a href="plants_de.html">Deutsch</a>
+            <a href="plants_es.html" class="active">Español</a>
+        </div>
+    </div>
+
+
+    <!-- Fixed Video Background Layer -->
+    <div class="video-background-fixed">
+        <!-- Video 1: Lemon (Active by default) -->
+        <video class="bg-video active" autoplay muted loop playsinline>
+            <source src="assets/lemon_field_closeup_video.mp4" type="video/mp4">
+        </video>
+        <!-- Video 2: Solanaceae -->
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="assets/solanaceae_greenhouse_video.mp4" type="video/mp4">
+        </video>
+        <!-- Video 3: Tobacco -->
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="assets/tobacco_flied_closeup_video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- No overlay on video, handled by split layout transparency -->
+
+    <style>
+        .bg-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            z-index: -5;
+        }
+
+        .bg-video.active {
+            opacity: 1;
+            z-index: -4;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const videos = document.querySelectorAll('.bg-video');
+            let currentIndex = 0;
+            const rotationInterval = 8000; // Switch every 8 seconds
+
+            setInterval(() => {
+                // Remove active class from current
+                videos[currentIndex].classList.remove('active');
+
+                // Calculate next index
+                currentIndex = (currentIndex + 1) % videos.length;
+
+                // Add active class to next
+                videos[currentIndex].classList.add('active');
+
+                // Ensure the next video is playing (sometimes browsers pause hidden videos)
+                videos[currentIndex].play().catch(e => console.log("Auto-play prevented", e));
+            }, rotationInterval);
+        });
+    </script>
+
+    <!-- Navigation -->
+    <a href="index_es.html" class="back-nav">&larr; Panel Principal</a>
+
+    <!-- Split Screen Layout -->
+    <div class="split-container">
+
+        <!-- Left: Content Panel (White Glass) -->
+        <main class="split-left">
+            <div class="fade-in">
+                <h2>Flora Digital</h2>
+                <p>
+                    Desarrollamos <strong>Modelos Avanzados de Plantas</strong>, gemelos digitales de alta fidelidad
+                    diseñados para modelar las
+                    complejidades fisiológicas de diversas especies agrícolas.
+                </p>
+                <p>
+                    Al integrar datos ambientales en tiempo real con visión por computadora avanzada, nuestros sistemas
+                    predicen el rendimiento
+                    y las métricas de salud con una precisión sin precedentes.
+                </p>
+                <p>
+                    Estas capacidades predictivas son fundamentales para <strong>optimizar el rendimiento</strong>,
+                    mientras
+                    simultáneamente se <strong>minimizan los costos operativos y el impacto ambiental</strong>.
+                </p>
+
+                <a href="models_es.html" class="action-btn">Explorar Modelos &rarr;</a>
+            </div>
+        </main>
+
+        <!-- Right: Visual Focus (Transparent to show video) -->
+        <div class="split-right">
+            <!-- Image removed as per user request to avoid overlap -->
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="impressum_es.html">Aviso Legal</a>
+            <a href="Private_es.html">Política de Privacidad</a>
+            <a href="License_es.html">Licencia</a>
+            <a href="contact_es.html">Contacto</a>
+        </div>
+        <span class="copyright">&copy; 2026 ALAIVE &bull; INTELIGENCIA VEGETAL</span>
+    </footer>
+</body>
+
+</html>

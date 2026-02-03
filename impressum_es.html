@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALAIVE | Revealing the mechanisms of life.</title>
+    <title>ALAIVE | Aviso Legal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Using Inter for a clean, modern, scientific look. Also Cinzel for a potential variant, but starting with Inter/Montserrat mix -->
     <link
         href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600&family=Inter:wght@200;300;400;600&family=Montserrat:wght@200;300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plants-theme.css">
 </head>
 
 <body>
+
     <!-- Language Switcher -->
     <div class="lang-switcher">
         <div class="lang-btn">
@@ -25,37 +26,50 @@
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
                 </path>
             </svg>
-            <span>EN</span>
+            <span>ES</span>
         </div>
         <div class="lang-dropdown">
-            <a href="index.html" class="active">English</a>
-            <a href="index_de.html">Deutsch</a>
-            <a href="index_es.html">Español</a>
+            <a href="impressum.html">English</a>
+            <a href="impressum_de.html">Deutsch</a>
+            <a href="impressum_es.html" class="active">Español</a>
         </div>
     </div>
 
-    <div class="background-container">
-        <!-- Subtle canvas for potential particle effects or just static elegant CSS background -->
-        <div class="glow-effect"></div>
+
+    <!-- Back Navigation -->
+    <a href="javascript:history.back()" class="back-nav">&larr; Atrás</a>
+
+    <div class="legal-container fade-in">
+        <h1>Aviso Legal</h1>
+        <div class="legal-content">
+            <p>
+                <strong>ALAIVE UG</strong><br>
+                Dr. Alejandro Agostini<br>
+            </p>
+            <p>
+                <strong>Contacto:</strong><br>
+                Tel.: +49 1578 7768443<br>
+                Correo electrónico: <a href="mailto:info@alaive.de">info@alaive.de</a>
+            </p>
+            <p>
+                <strong>Dirección postal:</strong><br>
+                Werinherstrasse 3<br>
+                81541 - Múnich<br>
+                Alemania
+            </p>
+        </div>
     </div>
 
-    <main class="content">
-        <h1 class="fade-in title">al<span class="highlight">ai</span>ve</h1>
-        <p class="fade-in subtitle">Revealing the mechanisms of life.</p>
-        <p class="fade-in sub-legend">From <a href="plants.html" class="elegant-link">plants</a> to <a
-                href="animals.html" class="elegant-link">animals</a> to human.
-        </p>
-    </main>
-
-    <footer class="fade-in">
+    <footer>
         <div class="footer-links">
-            <a href="impressum.html">Impressum</a>
-            <a href="Private.html">Privacy Policy</a>
-            <a href="License.html">License</a>
-            <a href="contact.html">Contact</a>
+            <a href="impressum_es.html">Aviso Legal</a>
+            <a href="Private_es.html">Política de Privacidad</a>
+            <a href="License_es.html">Licencia</a>
+            <a href="contact_es.html">Contacto</a>
         </div>
         <span class="copyright">&copy; 2026 ALAIVE</span>
     </footer>
+
 </body>
 
 </html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALAIVE | Unsere Modelle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600&family=Inter:wght@200;300;400;600&family=Montserrat:wght@200;300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plants-theme.css">
+    <style>
+        /* Local Override for Models Grid Container */
+        .glass-container-wide {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 3rem;
+            max-width: 1400px;
+            /* Wider for grid */
+            width: 95%;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            animation: fadeInReveal 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards 0.3s;
+        }
+
+        .title {
+            font-size: 4rem;
+            /* Reduced from 9rem for better header fit */
+            margin-bottom: 2rem;
+            text-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <div class="lang-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+            </svg>
+            <span>DE</span>
+        </div>
+        <div class="lang-dropdown">
+            <a href="models.html">English</a>
+            <a href="models_de.html" class="active">Deutsch</a>
+            <a href="models_es.html">Español</a>
+        </div>
+    </div>
+
+
+    <!-- Static Light Background (Optional if using card backgrounds, keeps clean feel) -->
+    <div class="video-background-fixed" style="background: #f0f0f0;"></div>
+
+    <a href="plants_de.html" class="back-nav">&larr; Zurück zur Digitalen Flora</a>
+
+    <div class="card-stack fade-in">
+        <h2 style="font-size: 3rem; margin-bottom: 2rem; color: #1a1a1a;">Unsere Modelle</h2>
+
+        <!-- Card 1: Lemon -->
+        <a href="lemon_yield_de.html" class="big-card">
+            <video class="card-bg-media" autoplay muted loop playsinline>
+                <source src="assets/lemon_branch_video.mp4" type="video/mp4">
+            </video>
+            <div class="card-content-overlay">
+                <div class="card-text">
+                    <h3>Citrus Limon</h3>
+                    <p>Hochpräzise Ertragsvorhersage</p>
+                </div>
+                <!-- Image removed -->
+            </div>
+        </a>
+
+        <!-- Card 2: Solanaceae -->
+        <a href="solanaceae_yield_de.html" class="big-card">
+            <video class="card-bg-media" autoplay muted loop playsinline>
+                <source src="assets/solanaceae_tomato_big_video.mp4" type="video/mp4">
+            </video>
+            <div class="card-content-overlay">
+                <div class="card-text">
+                    <h3>Solanaceae</h3>
+                    <p>Präzisions-Gartenbauanalyse</p>
+                </div>
+                <!-- Image removed -->
+            </div>
+        </a>
+
+        <!-- Card 3: Tobacco -->
+        <a href="tobacco_yield_de.html" class="big-card">
+            <video class="card-bg-media" autoplay muted loop playsinline>
+                <source src="assets/tobacco_flied_video.mp4?v=2" type="video/mp4">
+            </video>
+            <div class="card-content-overlay">
+                <div class="card-text">
+                    <h3>Nicotiana Tabacum</h3>
+                    <p>Biomasseoptimierung</p>
+                </div>
+                <!-- Image removed -->
+            </div>
+        </a>
+
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="impressum_de.html">Impressum</a>
+            <a href="Private_de.html">Datenschutz</a>
+            <a href="License_de.html">Lizenz</a>
+            <a href="contact_de.html">Kontakt</a>
+        </div>
+        <span class="copyright">&copy; 2026 ALAIVE &bull; PFLANZENINTELLIGENZ</span>
+    </footer>
+</body>
+
+</html>

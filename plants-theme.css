@@ -1,0 +1,410 @@
+/* Plants Light Theme & Master Structure */
+
+:root {
+    --light-bg: #f9f9f9;
+    --glass-white: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.4);
+    --text-primary: #1a1a1a;
+    --text-secondary: #555555;
+    --accent-color: #ce0000;
+    --font-heading: 'Bodoni Moda', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-primary);
+    overflow-y: auto !important;
+    /* Enable scrolling */
+    overflow-x: hidden;
+    min-height: 100vh;
+    padding-bottom: 4rem;
+    /* Space for footer */
+}
+
+/* --- Fixed Background Layer --- */
+.video-background-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -5;
+    overflow: hidden;
+}
+
+.video-background-fixed video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.theme-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.1);
+    /* Very light tint */
+    z-index: -4;
+    backdrop-filter: blur(0px);
+    /* Clear view of video initially */
+    transition: backdrop-filter 0.5s ease;
+}
+
+/* --- Navigation --- */
+.back-nav {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 100;
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.back-nav:hover {
+    color: var(--accent-color);
+    transform: translateX(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Typography --- */
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+p {
+    font-family: var(--font-body);
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* --- Split Layout (Plants Page) --- */
+.split-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.split-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem;
+    background: var(--glass-white);
+    backdrop-filter: blur(20px);
+    border-right: 1px solid var(--glass-border);
+}
+
+.split-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Transparent to show video background */
+}
+
+/* --- Big Cards (Models Page) --- */
+.card-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 8rem 2rem 4rem 2rem;
+    max-width: 1600px;
+    /* Wider to accommodate 3 cards side-by-side */
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+    width: 95%;
+}
+
+@media (min-width: 1024px) {
+    .card-stack {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+}
+
+.big-card {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    /* Taller on mobile for presence */
+    min-height: 400px;
+    border-radius: 24px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-decoration: none;
+    display: block;
+    flex: 1;
+    /* Distribute equal width on desktop */
+}
+
+@media (min-width: 1024px) {
+    .big-card {
+        height: 70vh;
+        /* High impact on desktop */
+    }
+}
+
+.big-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.card-bg-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.card-content-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2.5rem;
+    /* Stronger gradient for text protection */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99) 0%, rgba(0, 0, 0, 0.7) 40%, transparent 100%);
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.card-text h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    /* Added shadow */
+}
+
+.card-text p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    /* Added shadow */
+    font-weight: 500;
+}
+
+.card-side-image {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    height: 70%;
+    width: auto;
+    z-index: 3;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+    transition: transform 0.5s ease;
+}
+
+.big-card:hover .card-side-image {
+    transform: translateY(-50%) scale(1.05) rotate(2deg);
+}
+
+/* --- Article / Hybrid Layout (Yield Pages) --- */
+.article-header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem;
+}
+
+.header-glass-panel {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3rem;
+    border-radius: 16px;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.content-section {
+    background: #fff;
+    position: relative;
+    z-index: 10;
+    padding: 6rem 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.feature-row {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.feature-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.feature-text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.feature-image-container {
+    flex: 1;
+    position: relative;
+}
+
+.feature-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Buttons --- */
+.action-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    background: var(--text-primary);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    background: var(--accent-color);
+    box-shadow: 0 5px 20px rgba(206, 0, 0, 0.3);
+}
+
+/* --- Footer Override --- */
+footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+    background: #fff;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: var(--font-body);
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+    .split-container {
+        flex-direction: column;
+    }
+
+    .split-left {
+        min-height: 60vh;
+        padding: 3rem;
+    }
+
+    .feature-row {
+        flex-direction: column !important;
+        gap: 2rem;
+    }
+}
+
+/* --- Large Desktop Typography Scale --- */
+@media (min-width: 1400px) {
+    html {
+        font-size: 18px;
+        /* Base scale up */
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .feature-text h3 {
+        font-size: 3rem;
+    }
+
+    .card-text h3 {
+        font-size: 3rem;
+    }
+
+    .card-text p {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.7;
+    }
+
+    .action-btn {
+        font-size: 1.1rem;
+        padding: 1.2rem 3rem;
+    }
+
+    .split-left {
+        padding: 8rem;
+        /* More breathing room */
+    }
+}
