@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALAIVE | Human-Intelligenz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600&family=Inter:wght@200;300;400;600&family=Montserrat:wght@200;300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plants-theme.css">
+    <style>
+        .coming-soon-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 2rem;
+        }
+
+        .coming-soon-content h1 {
+            font-family: var(--font-heading);
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+            letter-spacing: 0.1rem;
+        }
+
+        .coming-soon-content p {
+            font-family: var(--font-body);
+            font-size: 1.5rem;
+            color: #ce0000;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+            font-weight: 600;
+        }
+
+        .coming-soon-back {
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .coming-soon-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .coming-soon-content p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <div class="lang-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+            </svg>
+            <span>DE</span>
+        </div>
+        <div class="lang-dropdown">
+            <a href="humans.html">English</a>
+            <a href="humans_de.html" class="active">Deutsch</a>
+            <a href="humans_es.html">Español</a>
+        </div>
+    </div>
+
+    <div class="coming-soon-container">
+        <div class="coming-soon-content">
+            <h1>Human-Intelligenz</h1>
+            <p>Demnächst Verfügbar</p>
+        </div>
+        <div class="coming-soon-back">
+            <a href="index_de.html" class="back-nav" style="position: static; padding: 0;">&larr; Zurück zum
+                Dashboard</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="impressum_de.html">Impressum</a>
+            <a href="Private_de.html">Datenschutz</a>
+            <a href="License_de.html">Lizenz</a>
+            <a href="contact_de.html">Kontakt</a>
+        </div>
+        <span class="copyright">&copy; 2026 ALAIVE &bull; HUMAN INTELLIGENCE</span>
+    </footer>
+</body>
+
+</html>
