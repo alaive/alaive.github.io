@@ -194,8 +194,12 @@ footer {
 
 .footer-links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     margin-bottom: 0.5rem;
+    width: 100%;
+    max-width: 100%;
 }
 
 .footer-links a {
