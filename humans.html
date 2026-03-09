@@ -20,38 +20,57 @@
             align-items: center;
             height: 100vh;
             text-align: center;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             padding: 2rem;
+            position: relative;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.4);
+            /* Dark overlay for readability */
         }
 
         .coming-soon-content h1 {
             font-family: var(--font-heading);
-            font-size: 4rem;
+            font-size: 5rem;
             margin-bottom: 1rem;
-            color: #1a1a1a;
+            color: #ffffff;
             letter-spacing: 0.1rem;
+            text-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
         }
 
         .coming-soon-content p {
             font-family: var(--font-body);
-            font-size: 1.5rem;
-            color: #ce0000;
+            font-size: 1.8rem;
+            color: var(--accent-color);
             text-transform: uppercase;
-            letter-spacing: 0.3rem;
+            letter-spacing: 0.5rem;
             font-weight: 600;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         .coming-soon-back {
-            margin-top: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* Override video background if we want a static image */
+        .video-background-fixed img.bg-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: cover;
+            z-index: -5;
         }
 
         @media (max-width: 768px) {
             .coming-soon-content h1 {
-                font-size: 2.5rem;
+                font-size: 3rem;
             }
 
             .coming-soon-content p {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -78,24 +97,31 @@
         </div>
     </div>
 
+    <!-- Background Layer -->
+    <div class="video-background-fixed">
+        <img src="assets/digital_brain_background.png" class="bg-image" alt="Digital Brain Background">
+        <div class="theme-overlay" style="background: rgba(0, 0, 0, 0.3);"></div>
+    </div>
+
     <div class="coming-soon-container">
         <div class="coming-soon-content">
             <h1>Humans Intelligence</h1>
             <p>Coming Soon</p>
         </div>
         <div class="coming-soon-back">
-            <a href="index.html" class="back-nav" style="position: static; padding: 0;">&larr; Back to Dashboard</a>
+            <a href="index.html" class="back-nav" style="position: static; padding: 0.8rem 2rem;">&larr; Back to
+                Dashboard</a>
         </div>
     </div>
 
     <footer>
-        <div class="footer-links">
+        <div class="footer-links" style="background: none; border: none;">
             <a href="impressum.html">Impressum</a>
             <a href="Private.html">Privacy Policy</a>
             <a href="License.html">License</a>
             <a href="contact.html">Contact</a>
         </div>
-        <span class="copyright">&copy; 2026 ALAIVE &bull; HUMAN INTELLIGENCE</span>
+        <span class="copyright" style="color: #ccc;">&copy; 2026 ALAIVE &bull; HUMAN INTELLIGENCE</span>
     </footer>
 </body>
 
