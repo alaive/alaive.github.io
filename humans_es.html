@@ -13,65 +13,28 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="plants-theme.css">
     <style>
-        .coming-soon-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            padding: 2rem;
+        /* Slightly stronger panel background for readability over video */
+        .split-left {
+            background: rgba(255, 255, 255, 0.93);
+        }
+        /* Padding for feature rows */
+        .feature-row {
+            padding: 4rem 0;
+        }
+        /* Video feature: replaces image in a feature row */
+        .feature-video-container {
+            flex: 1;
             position: relative;
-            z-index: 10;
-            background: rgba(0, 0, 0, 0.4);
-            /* Dark overlay for readability */
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
         }
-
-        .coming-soon-content h1 {
-            font-family: var(--font-heading);
-            font-size: 5rem;
-            margin-bottom: 1rem;
-            color: #ffffff;
-            letter-spacing: 0.1rem;
-            text-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
-        }
-
-        .coming-soon-content p {
-            font-family: var(--font-body);
-            font-size: 1.8rem;
-            color: var(--accent-color);
-            text-transform: uppercase;
-            letter-spacing: 0.5rem;
-            font-weight: 600;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .coming-soon-back {
-            margin-top: 3rem;
-        }
-
-        /* Override video background if we want a static image */
-        .video-background-fixed img.bg-image {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
+        .feature-video-container video {
+            width: 100%;
+            height: 100%;
+            min-height: 320px;
             object-fit: cover;
-            z-index: -5;
-        }
-
-        @media (max-width: 768px) {
-            .coming-soon-content h1 {
-                font-size: 3rem;
-            }
-
-            .coming-soon-content p {
-                font-size: 1.2rem;
-            }
+            display: block;
         }
     </style>
 </head>
@@ -97,32 +60,107 @@
         </div>
     </div>
 
-    <!-- Background Layer -->
+    <!-- Background: Forest Magic Video -->
     <div class="video-background-fixed">
-        <img src="assets/digital_brain_background.png" class="bg-image" alt="Fondo de Cerebro Digital">
-        <div class="theme-overlay" style="background: rgba(0, 0, 0, 0.3);"></div>
+        <video autoplay muted loop playsinline style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);min-width:100%;min-height:100%;width:auto;height:auto;object-fit:cover;z-index:-5;">
+            <source src="assets/human_forest_magic.mp4" type="video/mp4">
+        </video>
+        <div class="theme-overlay" style="background: rgba(255,255,255,0.15);"></div>
     </div>
 
-    <div class="coming-soon-container">
-        <div class="coming-soon-content">
-            <h1>Inteligencia Humana</h1>
-            <p>Próximamente</p>
-        </div>
-        <div class="coming-soon-back">
-            <a href="index_es.html" class="back-nav" style="position: static; padding: 0.8rem 2rem;">&larr; Volver al
-                Dashboard</a>
-        </div>
+    <a href="index_es.html" class="back-nav">&larr; Panel Principal</a>
+
+    <!-- Split Screen Hero -->
+    <div class="split-container" style="min-height: 80vh;">
+
+        <main class="split-left">
+            <div class="fade-in">
+                <h2>Inteligencia Humana</h2>
+                <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--accent-color);">Cognición Fisiológica</h3>
+                <p>
+                    Un <strong style="color: var(--accent-color);">sistema cognitivo basado en fisiología</strong>, fundamentado en modelos neurológicos mecanísticos, donde las emociones y los impulsos fisiológicos coexisten y compiten dinámicamente a través de un proceso de selección subconsciente-consciente.
+                </p>
+                <p>
+                    Aprende sensibilidades afectivas individuales y adapta acciones e interacciones para regular las trayectorias emocionales hacia estados objetivo personalizables, priorizando la <strong style="color: var(--accent-color);">regulación emocional y fisiológica</strong> sobre los objetivos físicos externos.
+                </p>
+                <div style="margin-top: 3rem;">
+                    <a href="#aplicaciones" class="action-btn">Explorar Aplicaciones &darr;</a>
+                </div>
+            </div>
+        </main>
+
+        <div class="split-right"></div>
+
     </div>
+
+    <!-- Aplicaciones -->
+    <section id="aplicaciones" class="content-section">
+
+        <!-- Aplicación 1: Modelado Dinámico de Emociones y Cognición -->
+        <div class="feature-row">
+            <div class="feature-text">
+                <h3>Modelado Dinámico de Emociones y Cognición<br>para Interfaces Humanas Digitales</h3>
+                <p>
+                    Desarrollamos <strong style="color: var(--accent-color);">sistemas cognitivos basados en fisiología</strong>, fundamentados en modelos mecanísticos de neurona-glía, donde las emociones y los impulsos fisiológicos interactúan dinámicamente a través de procesos regulatorios subconscientes y conscientes. Estos modelos aprenden sensibilidades afectivas individuales y adaptan las interacciones para explorar cómo las trayectorias emocionales evolucionan hacia estados objetivo configurables.
+                </p>
+                <br>
+                <p>
+                    Sobre esta base, nuestros <strong style="color: var(--accent-color);">avatares humanos digitales y agentes virtuales</strong> aprovechan modelos fisiológicos multiescala de la cognición para simular de manera realista la dinámica emocional y conductual. Expresada a través de avatares musculoesqueléticos realistas con expresiones faciales y lenguaje corporal específicos de cada condición, la plataforma apoya la investigación, la simulación y la formación profesional, habilitando <strong style="color: var(--accent-color);">interacción reproducible humano-IA</strong>, exploración de escenarios y evaluación cuantitativa de estrategias conductuales y de comunicación.
+                </p>
+            </div>
+            <div class="feature-image-container">
+                <img src="assets/human_avatar_cognition.png" alt="Modelado Dinámico de Emociones y Cognición">
+            </div>
+        </div>
+
+        <!-- Aplicación 2: Interfaces Cognitivas Experienciales -->
+        <div style="padding: 4rem 0 0 0; border-top: 1px solid #eee;">
+            <h3 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--text-primary); font-family: var(--font-heading);">Interfaces Cognitivas Experienciales<br>para la Experiencia Sensorial</h3>
+            <p style="font-family: var(--font-body); font-weight: 300; line-height: 1.6; color: var(--text-secondary); max-width: 860px; margin-bottom: 4rem;">
+                Una plataforma de experiencia inmersiva basada en <strong style="color: var(--accent-color);">modelos fisiológicos de cognición impulsada por emociones</strong>, donde la percepción, la atención, la memoria y la toma de decisiones emergen de procesos emocionales y fisiológicos acoplados. Los estados emocionales influyen en la percepción e interpretación, moldeando respuestas de manera coherente y dependiente del contexto. El sistema se adapta continuamente al compromiso del usuario, aprendiendo cómo la interacción modula los estados internos a lo largo del tiempo.
+            </p>
+
+            <!-- Sub-aplicación 1: INTER-ART -->
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h3 style="font-size: 2rem;">INTER-ART</h3>
+                    <p>
+                        Con nuestra aplicación <strong style="color: var(--accent-color);">INTER-ART</strong>, los colores, sonidos, aromas y sabores se convierten en imágenes artísticas en evolución, composiciones de luz y color, permitiendo que las <strong style="color: var(--accent-color);">respuestas emocionales y fisiológicas</strong> de los usuarios den forma al entorno artístico.
+                    </p>
+                </div>
+                <div class="feature-image-container">
+                    <img src="assets/human_interart.png" alt="Aplicación INTER-ART">
+                </div>
+            </div>
+
+            <!-- Sub-aplicación 2: E-nologo -->
+            <div class="feature-row reverse" style="padding-top: 2rem;">
+                <div class="feature-text">
+                    <h3 style="font-size: 2rem;">E-nologo</h3>
+                    <p>
+                        En nuestra interfaz <strong style="color: var(--accent-color);">E-nologo</strong>, el sistema modela cómo los estados internos influyen en la percepción sensorial y la toma de decisiones en escenarios de cata de vinos, mejorando el aprendizaje, la atención y la apreciación a través de <strong style="color: var(--accent-color);">interacciones adaptativas biológicamente inspiradas</strong>.
+                    </p>
+                </div>
+                <div class="feature-video-container">
+                    <video autoplay muted loop playsinline>
+                        <source src="assets/human_wine_cellar.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <footer>
-        <div class="footer-links" style="background: none; border: none;">
+        <div class="footer-links">
             <a href="impressum_es.html">Aviso Legal</a>
             <a href="Private_es.html">Política de Privacidad</a>
             <a href="License_es.html">Licencia</a>
             <a href="contact_es.html">Contacto</a>
         </div>
-        <span class="copyright" style="color: #ccc;">&copy; 2026 ALAIVE &bull; HUMAN INTELLIGENCE</span>
+        <span class="copyright">&copy; 2026 ALAIVE &bull; HUMAN INTELLIGENCE</span>
     </footer>
+
 </body>
 
 </html>
