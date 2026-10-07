@@ -1,148 +1,348 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALAIVE | Digitale Flora</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600&family=Inter:wght@200;300;400;600&family=Montserrat:wght@200;300;400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="plants-theme.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ALAIVE Digitale Flora und PLANTAR — KI-gestützte physiologische digitale Zwillinge für Nutzpflanzen.">
+  <title>ALAIVE | Digitale Flora · PLANTAR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="plants-v2.css">
 </head>
-
 <body>
 
-    <!-- Language Switcher -->
-    <div class="lang-switcher">
-        <div class="lang-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-                </path>
-            </svg>
-            <span>DE</span>
+<!-- Header & Sticky Navigation -->
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="index_de.html">al<span class="highlight">ai</span>ve</a>
+    
+    <nav class="nav-links">
+      <a href="#digital-flora">Digitale Flora</a>
+      <a href="#plantar">PLANTAR</a>
+      <a href="#models">Modelle</a>
+      <a href="#technology">Technologie</a>
+      <a href="index_de.html" class="back-link-tag">&larr; Haupt-Dashboard</a>
+    </nav>
+
+    <div class="nav-actions">
+      <!-- Language Switcher -->
+      <div class="v2-lang-switcher">
+        <button class="v2-lang-btn" type="button" aria-label="Sprache wählen">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span>DE</span>
+        </button>
+        <div class="v2-lang-dropdown">
+          <a href="plants.html">English</a>
+          <a href="plants_de.html" class="active">Deutsch</a>
+          <a href="plants_es.html">Español</a>
         </div>
-        <div class="lang-dropdown">
-            <a href="plants.html">English</a>
-            <a href="plants_de.html" class="active">Deutsch</a>
-            <a href="plants_es.html">Español</a>
+      </div>
+
+      <a class="button compact" href="#pilot">Pilotprojekt anfragen</a>
+      <button class="menu" aria-label="Navigation umschalten" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">ALAIVE · PFLANZENINTELLIGENZ</p>
+        <h1>Die Mechanismen<br>des <em>Lebens</em><br>entschlüsseln.</h1>
+        <p class="lead">KI-gestützte physiologische Modelle, die biologische Komplexität in nutzbare Vorhersagen verwandeln.</p>
+        <div class="hero-actions">
+          <a class="button" href="#digital-flora">Digitale Flora entdecken <b>&rarr;</b></a>
+          <a class="underlined" href="#plantar">PLANTAR erkunden</a>
         </div>
+      </div>
+      <div class="hero-art">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="hero-image-card">
+          <img
+            src="images/hero-plant-model.jpg"
+            alt="ALAIVE Digitaler Pflanzen-Zwilling — Physiologisches Modell und KI"
+            class="hero-diagram-img"
+          >
+        </div>
+      </div>
     </div>
+  </section>
 
-
-    <!-- Fixed Video Background Layer -->
-    <div class="video-background-fixed">
-        <!-- Video 1: Lemon (Active by default) -->
-        <video class="bg-video active" autoplay muted loop playsinline>
-            <source src="assets/lemon_field_closeup_video.mp4" type="video/mp4">
-        </video>
-        <!-- Video 2: Solanaceae -->
-        <video class="bg-video" autoplay muted loop playsinline>
-            <source src="assets/solanaceae_greenhouse_video.mp4" type="video/mp4">
-        </video>
-        <!-- Video 3: Tobacco -->
-        <video class="bg-video" autoplay muted loop playsinline>
-            <source src="assets/tobacco_flied_closeup_video.mp4" type="video/mp4">
-        </video>
+  <!-- Digital Flora Section (Preserving Core German Contents) -->
+  <section class="intro" id="digital-flora">
+    <div class="wrap intro-grid">
+      <div>
+        <p class="kicker">DIGITALE FLORA</p>
+        <h2>Fortschrittliche Pflanzenmodelle für eine sich wandelnde Welt.</h2>
+      </div>
+      <div>
+        <p class="large">
+          Wir entwickeln <strong>Fortschrittliche Pflanzenmodelle</strong>, hochpräzise digitale Zwillinge, die darauf ausgelegt sind, die physiologischen Komplexitäten verschiedener landwirtschaftlicher Arten zu modellieren.
+        </p>
+        <p>
+          Durch die Integration von Echtzeit-Umweltdaten mit fortschrittlicher Computer Vision sagen unsere Systeme Ertrag und Gesundheitsmetriken mit beispielloser Genauigkeit voraus.
+        </p>
+        <p>
+          Diese Vorhersagefähigkeiten sind entscheidend für die <strong>Optimierung des Ertrags</strong>, während gleichzeitig <strong>Betriebskosten und Umweltauswirkungen minimiert</strong> werden.
+        </p>
+        <div style="margin-top: 28px;">
+          <a class="underlined" href="#models">Pflanzenmodelle ansehen &rarr;</a>
+        </div>
+      </div>
     </div>
-    <!-- No overlay on video, handled by split layout transparency -->
+  </section>
 
-    <style>
-        .bg-video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            object-fit: cover;
-            opacity: 0;
-            transition: opacity 2s ease-in-out;
-            z-index: -5;
-        }
-
-        .bg-video.active {
-            opacity: 1;
-            z-index: -4;
-        }
-    </style>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const videos = document.querySelectorAll('.bg-video');
-            let currentIndex = 0;
-            const rotationInterval = 8000; // Switch every 8 seconds
-
-            setInterval(() => {
-                // Remove active class from current
-                videos[currentIndex].classList.remove('active');
-
-                // Calculate next index
-                currentIndex = (currentIndex + 1) % videos.length;
-
-                // Add active class to next
-                videos[currentIndex].classList.add('active');
-
-                // Ensure the next video is playing (sometimes browsers pause hidden videos)
-                videos[currentIndex].play().catch(e => console.log("Auto-play prevented", e));
-            }, rotationInterval);
-        });
-    </script>
-
-    <!-- Navigation -->
-    <a href="index_de.html" class="back-nav">&larr; Haupt-Dashboard</a>
-
-    <!-- Split Screen Layout -->
-    <div class="split-container">
-
-        <!-- Left: Content Panel (White Glass) -->
-        <main class="split-left">
-            <div class="fade-in">
-                <h2>Digitale Flora</h2>
-                <p>
-                    Wir entwickeln <strong>Fortschrittliche Pflanzenmodelle</strong>, hochpräzise digitale Zwillinge,
-                    die darauf ausgelegt sind, die
-                    physiologischen Komplexitäten verschiedener landwirtschaftlicher Arten zu modellieren.
-                </p>
-                <p>
-                    Durch die Integration von Echtzeit-Umweltdaten mit fortschrittlicher Computer Vision sagen unsere
-                    Systeme Ertrag
-                    und Gesundheitsmetriken mit beispielloser Genauigkeit voraus.
-                </p>
-                <p>
-                    Diese Vorhersagefähigkeiten sind entscheidend für die <strong>Optimierung des Ertrags</strong>,
-                    während
-                    gleichzeitig <strong>Betriebskosten und Umweltauswirkungen minimiert</strong> werden.
-                </p>
-
-                <a href="models_de.html" class="action-btn">Modelle erkunden &rarr;</a>
+  <!-- PLANTAR Section -->
+  <section class="plantar-section" id="plantar">
+    <div class="wrap">
+      <div class="section-title">
+        <p class="kicker">DAS KOMMERZIELLE PRODUKT</p>
+        <h2>PLANTAR</h2>
+        <p>Der physiologische digitale Zwilling für Ihre Kulturpflanze.</p>
+      </div>
+      <div class="plantar-grid">
+        <div class="plantar-visual">
+          <img
+            src="images/plantar-product.jpg"
+            alt="PLANTAR — Der physiologische digitale Zwilling für Ihre Kulturpflanze"
+            class="plantar-product-img"
+          >
+        </div>
+        <div class="plantar-copy">
+          <p class="large">Modellieren Sie die Pflanze, nicht nur das Feld.</p>
+          <p>PLANTAR verknüpft Pflanzenbeobachtungen und Umweltbedingungen mit einem physiologischen Modell, um das Wachstum zu simulieren und Alternativszenarien durchzuspielen.</p>
+          <div class="benefits">
+            <div>
+              <span>01</span>
+              <b>Verstehen</b>
+              <p>Wie sich Umweltbedingungen auf die Pflanzenentwicklung auswirken.</p>
             </div>
-        </main>
-
-        <!-- Right: Visual Focus (Transparent to show video) -->
-        <div class="split-right">
-            <!-- Image removed as per user request to avoid overlap -->
+            <div>
+              <span>02</span>
+              <b>Vorhersagen</b>
+              <p>Wachstum, Wasserbedarf, Fruchtentwicklung und Hitzestress.</p>
+            </div>
+            <div>
+              <span>03</span>
+              <b>Simulieren</b>
+              <p>Mögliche Erträge vor Anpassung der Anbaubedingungen.</p>
+            </div>
+          </div>
+          <a class="button" href="#pilot">Kulturpflanze besprechen <b>&rarr;</b></a>
         </div>
-
+      </div>
     </div>
+  </section>
 
-    <footer>
-        <div class="footer-links">
-            <a href="impressum_de.html">Impressum</a>
-            <a href="Private_de.html">Datenschutz</a>
-            <a href="License_de.html">Lizenz</a>
-            <a href="contact_de.html">Kontakt</a>
+  <!-- Models Section (Connected to existing German models) -->
+  <section class="models" id="models">
+    <div class="wrap">
+      <div class="section-title inline">
+        <div>
+          <p class="kicker">MODELLE ERKUNDEN</p>
+          <h2>Pflanzenintelligenz, Kultur für Kultur.</h2>
         </div>
-        <span class="copyright">&copy; 2026 ALAIVE &bull; PFLANZENINTELLIGENZ</span>
-    </footer>
-</body>
+        <p>Wählen Sie ein Modell und entdecken Sie, wie physiologische digitale Zwillinge die Produktion optimieren.</p>
+      </div>
+      <div class="model-grid">
+        <!-- Lemon Card -->
+        <a class="crop-card lemon" href="lemon_yield_de.html">
+          <video class="crop-card-video" autoplay muted loop playsinline>
+            <source src="assets/lemon_branch_video.mp4" type="video/mp4">
+          </video>
+          <span class="crop-tag">PLANTAR · VERFÜGBAR</span>
+          <h3>Citrus Limon</h3>
+          <p>Präzise Ertragsvorhersage · Wasserbedarf · Fruchtwachstum</p>
+          <b>Zitronen-Modell erkunden &rarr;</b>
+        </a>
 
+        <!-- Solanaceae Card -->
+        <a class="crop-card citrus" href="solanaceae_yield_de.html">
+          <video class="crop-card-video" autoplay muted loop playsinline>
+            <source src="assets/solanaceae_tomato_big_video.mp4" type="video/mp4">
+          </video>
+          <span class="crop-tag">PLANTAR · GARTENBAU</span>
+          <h3>Solanaceae</h3>
+          <p>Präzise Gewächshausanalyse · Umweltdynamik · Ertrag</p>
+          <b>Solanaceae erkunden &rarr;</b>
+        </a>
+
+        <!-- Tobacco / Biomass Card -->
+        <a class="crop-card custom" href="tobacco_yield_de.html">
+          <video class="crop-card-video" autoplay muted loop playsinline>
+            <source src="assets/tobacco_flied_video.mp4?v=2" type="video/mp4">
+          </video>
+          <span class="crop-tag">PLANTAR · FORSCHUNG</span>
+          <h3>Nicotiana</h3>
+          <p>Biomassen-Dynamik · Vegetatives Wachstum · Lichtoptimierung</p>
+          <b>Nicotiana erkunden &rarr;</b>
+        </a>
+      </div>
+
+      <div class="models-footer-cta">
+        <a href="models_de.html" class="button secondary">Alle Modelle in der Übersicht <b>&rarr;</b></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications Section -->
+  <section class="applications">
+    <div class="wrap">
+      <p class="kicker">WAS KANN MODELLIERT WERDEN?</p>
+      <div class="application-grid">
+        <div>
+          <strong>Wachstum</strong>
+          <span>Kronen- und Vegetationsentwicklung</span>
+        </div>
+        <div>
+          <strong>Wasser</strong>
+          <span>Bedarf und pflanzliche Transpiration</span>
+        </div>
+        <div>
+          <strong>Frucht</strong>
+          <span>Entwicklung und Fruchtdynamik</span>
+        </div>
+        <div>
+          <strong>Stress</strong>
+          <span>Reaktion auf Hitze, Trockenheit und Kälte</span>
+        </div>
+        <div>
+          <strong>Biomasse</strong>
+          <span>Pflanzen- und Fruchtbiomasse</span>
+        </div>
+        <div>
+          <strong>Szenarien</strong>
+          <span>Alternative Anbaubedingungen</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Section -->
+  <section class="technology" id="technology">
+    <div class="wrap tech-grid">
+      <div>
+        <p class="kicker">TECHNOLOGIE</p>
+        <h2>KI mit biologischem Fundament.</h2>
+      </div>
+      <div>
+        <p class="large">Wir verbinden künstliche Intelligenz, computergestützte Bildverarbeitung und physiologische Modellierung zur Abbildung komplexer Biosysteme.</p>
+        <div class="pill-list">
+          <span>Künstliche Intelligenz</span>
+          <span>Computer Vision</span>
+          <span>Umweltdaten</span>
+          <span>Physiologische Modellierung</span>
+          <span>Digitale Zwillinge</span>
+          <span>Simulation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Anwendungsbeispiel Section -->
+  <section class="proof">
+    <div class="wrap proof-grid">
+      <div class="proof-image">
+        <img src="images/commercial-citrus.jpg" alt="Kommerzielle Zitrusproduktion" class="proof-img">
+        <span>ANWENDUNGSBEISPIEL</span>
+        <b>Kommerzielle Zitrusproduktion</b>
+      </div>
+      <div>
+        <p class="kicker">ANWENDUNGSBEISPIEL</p>
+        <h2>Aus der Forschung in die kommerzielle Zitrusproduktion.</h2>
+        <p>PLANTAR wurde erfolgreich im kommerziellen Zitrusanbau unter Einbindung realer Felddaten und hochaufgelöster Umweltmessungen erprobt. Nutzen Sie unsere Plattform für verlässliche Prognosen und gezielte Kulturführung.</p>
+        <a class="underlined" href="#pilot">Anwendung für Ihre Kultur anfragen &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pilot Request Form Section -->
+  <section class="pilot" id="pilot">
+    <div class="wrap pilot-grid">
+      <div>
+        <p class="kicker">PILOTPROJEKT STARTEN</p>
+        <h2>Möchten Sie eine Kulturpflanze modellieren?</h2>
+        <p>Teilen Sie uns mit, was Sie anbauen und welche Parameter Sie vorhersagen oder optimieren möchten.</p>
+      </div>
+      <form id="pilot-form" action="send_pilot.php" method="POST">
+        <input type="hidden" name="lang" value="de">
+        <div class="two">
+          <label>
+            Unternehmen *
+            <input required name="company" placeholder="Name des Unternehmens">
+          </label>
+          <label>
+            Geschäftliche E-Mail *
+            <input type="email" required name="email" placeholder="name@unternehmen.de">
+          </label>
+        </div>
+        <div class="two">
+          <label>
+            Kulturpflanze *
+            <input required name="crop" placeholder="z. B. Zitrone, Tomate, Beeren">
+          </label>
+          <label>
+            Hektar
+            <input name="hectares" placeholder="Fläche ca. in ha">
+          </label>
+        </div>
+        <label>
+          Land / Region *
+          <input required name="country" placeholder="Land / Region">
+        </label>
+        <label>
+          Fragestellung
+          <textarea name="question" rows="3" placeholder="Was möchten Sie vorhersagen, verstehen oder optimieren?"></textarea>
+        </label>
+        <button class="button" type="submit">Pilotdiskussion anfragen <b>&rarr;</b></button>
+        <div id="pilot-status" class="pilot-status"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="index_de.html">al<span class="highlight">ai</span>ve</a>
+      <p>Pflanzenintelligenz durch KI und physiologische Modellierung.</p>
+    </div>
+    <div>
+      <b>Navigation</b>
+      <a href="#digital-flora">Digitale Flora</a>
+      <a href="#plantar">PLANTAR</a>
+      <a href="#models">Modelle</a>
+      <a href="models_de.html">Alle Modelle Übersicht</a>
+      <a href="index_de.html">Haupt-Dashboard</a>
+    </div>
+    <div>
+      <b>Rechtliches</b>
+      <a href="impressum_de.html">Impressum</a>
+      <a href="Private_de.html">Datenschutz</a>
+      <a href="License_de.html">Lizenz</a>
+      <a href="contact_de.html">Kontakt</a>
+    </div>
+    <div>
+      <b>Kontakt</b>
+      <a href="mailto:contact@alaive.de">contact@alaive.de</a>
+      <a href="#pilot">Pilotprojekt anfragen</a>
+    </div>
+  </div>
+  <div class="wrap copyright">
+    <span>&copy; 2026 ALAIVE &bull; PFLANZENINTELLIGENZ</span>
+    <span>Von Pflanzen zu Tieren zum Menschen.</span>
+  </div>
+</footer>
+
+<script src="plants-v2.js?v=4"></script>
+</body>
 </html>

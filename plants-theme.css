@@ -7,7 +7,7 @@
     --text-primary: #1a1a1a;
     --text-secondary: #555555;
     --accent-color: #ce0000;
-    --font-heading: 'Bodoni Moda', serif;
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-body: 'Inter', sans-serif;
 }
 
